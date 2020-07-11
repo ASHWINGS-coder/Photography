@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+    <style>
+        input{
+            margin:10px;
+        }
+        textarea{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Add Task
+    </h1>
+   <form action="/users/addtask"  method="POST">
+    <input type="text" name="num" placeholder="ID..." required>
+    <br>
+    <input type="file" name="image" placeholder="profile picture" required>
+    <br>
+    <textarea name="description" id="" cols="30" rows="3" placeholder="TypeHere"></textarea>
+    <br>
+    <input type="submit" value="Add Task">
+   </form>
+</body>
+</html>
